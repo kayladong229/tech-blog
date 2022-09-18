@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const signupFormHandler = async function (event) {
   event.preventDefault();
 
