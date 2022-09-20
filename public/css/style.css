@@ -1,0 +1,8 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: flex-start;
+}
