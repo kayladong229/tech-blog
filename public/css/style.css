@@ -5,4 +5,5 @@
 .navbar {
     display: flex;
     align-items: flex-start;
+    list-style-type: none;
 }

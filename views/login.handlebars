@@ -1,1 +1,19 @@
-  {{!-- <script src="/js/login.js"></script> --}}
+<div class='card'>
+  <div class='card-header'>
+    <h2>Login</h2>
+  </div>
+  <form id='login-form' class='card-body'>
+    <div class='container'>
+      <label for='username-input-login'><b>Username:</b></label>
+      <input type='text' name='username' id='username-input-login' required />
+
+      <label for='password-input-login'><b>Password:</b></label>
+      <input type='password' name='password' id='password-input-login' required />
+
+      <button type='submit' id='login-btn' class='btn'>Login</button>
+    </div>
+    <a href='/signup'>Create an account</a>
+  </form>
+</div>
+
+<script src='/js/login.js'></script>
