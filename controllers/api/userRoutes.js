@@ -13,10 +13,10 @@ router.post('/', async (req, res) => {
       req.session.username = userData.username;
       req.session.logged_in = true;
 
-      res.statusCode(200).json(userData);
+      res.status(200).json(userData);
     });
   } catch (err) {
-    res.statusCode(400).json(err);
+    res.status(400).json(err);
   }
 });
 
