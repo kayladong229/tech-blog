@@ -4,22 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Tech Blog</title>
+    <title>MVC Tech Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/jass.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body>
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1 class="app-name">My Tech Blog</h1>
+  <body class="flex-column min-100-vh">
+    <header class="hero">
+      <h1 class="app-name">MVC Tech Blog</h1>
       <nav class="navbar">
         <ul>
             <li class="li-inline nav-item"><a href="/">Home</a></li>
             <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
-            <li class="li-inline nav-item"><a href='#' id="logout-link">Logout</a></li>
+            {{#if logged_in}}
+            <li class="li-inline nav-item" id="logout-link"><a href='#'>Logout</a></li>
+            {{else}}
+            <li class="li-inline nav-item"><a href='/login'>Login</a></li>
+            {{/if}}
         </ul>
+        {{#if logged_in}}
+        <button type="submit" id="new-post-btn" class="btn"><a href="/dashboard/new">New Post</a></button>
+        {{/if}}
       </nav>
     </header>
-    <main class="container container-fluid mt-5">
+    <main class="col-auto">
         {{{body}}}
     </main>
     <!-- Render script for logged in users only -->
