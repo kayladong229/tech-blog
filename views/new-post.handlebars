@@ -1,1 +1,19 @@
-  {{!-- <script src="/js/new.js"></script> --}}
+<div class='card'>
+    <div class="card-header">
+      <h3>New Post</h3>
+    </div>
+  
+    <form id='new-post-form' class='card-body'>
+      <div class="container">
+        <label for='post-title'><b>Title:</b></label>
+        <input type='text' name='post-title' required/>
+
+        <label for='post-body'><b>Add Content:</b></label>
+        <textarea name="post-body" required>
+        </textarea>
+
+        <button type='submit' class='btn'>Create Post</button>
+      </div>
+    </form>
+  </div>
+  <script src='/js/new.js'></script>
