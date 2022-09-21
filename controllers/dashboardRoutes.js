@@ -21,7 +21,7 @@ router.get('/', withAuth, async (req, res) => {
     res.render('all-posts-admin', {
       layout: 'dashboard',
       posts,
-      logged_in: true,
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -43,7 +43,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
     res.render('edit-post', {
       layout: 'dashboard',
       post,
-      logged_in: true
+      logged_in: req.session.logged_in
     });
   } catch (err) {
     res.status(500).json(err);
