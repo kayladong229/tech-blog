@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="card-body">
-      {{post.content}}
+      {{post.body}}
     </div>
   </article>
 
@@ -21,7 +21,7 @@
         {{#each post.Comments}}
           <div>
             <p>
-              {{content}}
+              {{body}}
             </p>
             <p>
               &mdash; {{User.username}}, {{format_date createdAt}}
@@ -38,7 +38,7 @@
     </div>
 
     <div class="card-body">
-      <input type="hidden" name="post-id" value="{{post.id}}" />
+      <input type="hidden" name="post_id" value="{{post.id}}" />
 
       <label class="form-label" for="comment-body">Comment</label>
 
