@@ -15,6 +15,9 @@ header nav ul {
 }
 
 #new-post-btn {
-    margin-left: 650px;
+    margin-left: 775px;
 }
-  
+
+#login-btn, #signup-btn {
+    margin: 30px;
+}
