@@ -3,6 +3,8 @@ Completed homework for the Module 14 Challenge. The purpose was to create a blog
 
 Application link: https://young-earth-73455.herokuapp.com/
 
+Homepage screenshot:
 ![Homepage preview](./Assets/Screen%20Shot%202022-09-22%20at%206.20.25%20PM.png)
 
+Individual post screenshot:
 ![Individual post preview](./Assets/Screen%20Shot%202022-09-22%20at%206.20.37%20PM.png)
