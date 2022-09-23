@@ -2,8 +2,19 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.navbar {
-    display: flex;
-    align-items: flex-start;
+header h1 {
+    margin: 10px 0 0 10px;
+}
+
+header nav ul {
     list-style-type: none;
 }
+
+.nav-item {
+    padding: 5px;
+}
+
+#new-post-btn {
+    margin-left: 650px;
+}
+  
